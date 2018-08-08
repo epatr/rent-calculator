@@ -49,14 +49,14 @@ Public Class frmMain
         lblTotal1.Text = dblTotal1.ToString("C3")
         lblTotal2.Text = dblTotal2.ToString("C3")
         lblTotalOwed.Text = dblTotalOwed.ToString("C3")
-        strSummary = "I spent " & dblTotal1.ToString("C3") & " total on:" & Environment.NewLine _
+        strSummary = "I spent " & dblTotal1.ToString("C2") & " total on:" & Environment.NewLine _
             & "- Internet: " & dblInternet.ToString("C2") & Environment.NewLine _
             & "- Power: " & dblPower.ToString("C2") & Environment.NewLine _
             & "- Storage: " & dblStorage.ToString("C2") & Environment.NewLine _
             & "- Television: " & dblTelevision.ToString("C2") & Environment.NewLine _
             & "- Water: " & dblWater.ToString("C2") & Environment.NewLine _
             & "- Expenses: " & dblExpenses1.ToString("C2") & Environment.NewLine & Environment.NewLine _
-            & "You spent " & dblTotal2.ToString("C3") & " total on: " & Environment.NewLine _
+            & "You spent " & dblTotal2.ToString("C2") & " total on: " & Environment.NewLine _
             & "- Rent: " & dblRent.ToString("C2") & Environment.NewLine _
             & "- Expenses: " & dblExpenses2.ToString("C2") & Environment.NewLine & Environment.NewLine _
             & "Bills & expenses cost " & dblHalf1.ToString("C3") & " each, while rent & expenses cost " & dblHalf2.ToString("C3") & " each. The difference is " & dblTotalOwed.ToString("C3") & "."
