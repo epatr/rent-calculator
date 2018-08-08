@@ -46,6 +46,8 @@ Partial Class frmMain
         Me.lblTotal2 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.lblTotalOwed = New System.Windows.Forms.Label()
+        Me.txtSummary = New System.Windows.Forms.TextBox()
+        Me.Label10 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
@@ -178,18 +180,18 @@ Partial Class frmMain
         '
         'btnCalc
         '
-        Me.btnCalc.Location = New System.Drawing.Point(287, 159)
+        Me.btnCalc.Location = New System.Drawing.Point(208, 135)
         Me.btnCalc.Name = "btnCalc"
-        Me.btnCalc.Size = New System.Drawing.Size(75, 23)
+        Me.btnCalc.Size = New System.Drawing.Size(193, 35)
         Me.btnCalc.TabIndex = 16
         Me.btnCalc.Text = "&Calculate"
         Me.btnCalc.UseVisualStyleBackColor = True
         '
         'btnExit
         '
-        Me.btnExit.Location = New System.Drawing.Point(287, 188)
+        Me.btnExit.Location = New System.Drawing.Point(208, 177)
         Me.btnExit.Name = "btnExit"
-        Me.btnExit.Size = New System.Drawing.Size(75, 23)
+        Me.btnExit.Size = New System.Drawing.Size(193, 35)
         Me.btnExit.TabIndex = 17
         Me.btnExit.Text = "E&xit"
         Me.btnExit.UseVisualStyleBackColor = True
@@ -210,7 +212,6 @@ Partial Class frmMain
         Me.lblTotal1.Name = "lblTotal1"
         Me.lblTotal1.Size = New System.Drawing.Size(100, 23)
         Me.lblTotal1.TabIndex = 19
-        Me.lblTotal1.Text = "Label10"
         Me.lblTotal1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'Label11
@@ -229,7 +230,6 @@ Partial Class frmMain
         Me.lblTotal2.Name = "lblTotal2"
         Me.lblTotal2.Size = New System.Drawing.Size(100, 23)
         Me.lblTotal2.TabIndex = 21
-        Me.lblTotal2.Text = "Label12"
         Me.lblTotal2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'Label13
@@ -248,14 +248,33 @@ Partial Class frmMain
         Me.lblTotalOwed.Name = "lblTotalOwed"
         Me.lblTotalOwed.Size = New System.Drawing.Size(100, 23)
         Me.lblTotalOwed.TabIndex = 23
-        Me.lblTotalOwed.Text = "Label14"
         Me.lblTotalOwed.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'txtSummary
+        '
+        Me.txtSummary.Location = New System.Drawing.Point(23, 265)
+        Me.txtSummary.Multiline = True
+        Me.txtSummary.Name = "txtSummary"
+        Me.txtSummary.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
+        Me.txtSummary.Size = New System.Drawing.Size(378, 130)
+        Me.txtSummary.TabIndex = 24
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(23, 246)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(61, 15)
+        Me.Label10.TabIndex = 25
+        Me.Label10.Text = "Summary:"
         '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(933, 519)
+        Me.ClientSize = New System.Drawing.Size(426, 420)
+        Me.Controls.Add(Me.Label10)
+        Me.Controls.Add(Me.txtSummary)
         Me.Controls.Add(Me.lblTotalOwed)
         Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.lblTotal2)
@@ -313,4 +332,6 @@ Partial Class frmMain
     Friend WithEvents lblTotal2 As Label
     Friend WithEvents Label13 As Label
     Friend WithEvents lblTotalOwed As Label
+    Friend WithEvents txtSummary As TextBox
+    Friend WithEvents Label10 As Label
 End Class
